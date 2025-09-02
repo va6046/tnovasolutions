@@ -10,6 +10,16 @@
 4. En **Source**, selecciona **GitHub Actions**
 5. Guarda los cambios
 
+### 1.1. Configurar Environment (Importante)
+
+1. En **Settings** → **Environments**
+2. Haz clic en **New environment**
+3. Nombre: `github-pages`
+4. En **Environment protection rules**, marca:
+   - ✅ **Required reviewers** (opcional)
+   - ✅ **Wait timer** (opcional)
+5. Haz clic en **Configure environment**
+
 ### 2. Configurar el Dominio Personalizado (Opcional)
 
 Si quieres usar el dominio `tnovasolutions.com`:
@@ -50,13 +60,37 @@ Value: 185.199.111.153
 ### Error de Permisos
 Si ves errores de permisos, asegúrate de que:
 - GitHub Pages esté habilitado con **GitHub Actions** como fuente
+- El environment `github-pages` esté creado
 - El workflow tenga los permisos correctos (ya configurados)
+
+### Error de Environment
+Si ves errores sobre environment:
+1. Ve a **Settings** → **Environments**
+2. Crea un environment llamado `github-pages`
+3. No es necesario configurar protection rules para sitios estáticos
+
+### Workflow No Se Ejecuta
+Si el workflow no se ejecuta automáticamente:
+1. Ve a la pestaña **Actions**
+2. Haz clic en **Deploy to GitHub Pages**
+3. Haz clic en **Run workflow**
+4. Selecciona la rama `main` y haz clic en **Run workflow**
 
 ### Dominio No Funciona
 Si el dominio personalizado no funciona:
 - Verifica que los registros DNS estén configurados correctamente
 - Espera hasta 24 horas para que los cambios DNS se propaguen
 - Verifica que el archivo `CNAME` esté presente en el repositorio
+
+### Deploy Falla
+Si el deploy falla:
+1. Ve a **Actions** → **Deploy to GitHub Pages**
+2. Haz clic en el último workflow fallido
+3. Revisa los logs para identificar el error
+4. Los errores más comunes son:
+   - Environment no configurado
+   - Permisos insuficientes
+   - Archivos faltantes
 
 ## Archivos Importantes
 
