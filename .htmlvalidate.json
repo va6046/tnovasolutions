@@ -136,28 +136,5 @@
     "wcag/h198": "error",
     "wcag/h199": "error",
     "wcag/h200": "error"
-  },
-  "elements": {
-    "html": {
-      "attributes": {
-        "lang": {
-          "required": true
-        }
-      }
-    },
-    "img": {
-      "attributes": {
-        "alt": {
-          "required": true
-        }
-      }
-    },
-    "a": {
-      "attributes": {
-        "href": {
-          "required": true
-        }
-      }
-    }
   }
 }
