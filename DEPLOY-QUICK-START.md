@@ -2,10 +2,14 @@
 
 ## ⚡ Pasos Rápidos (5 minutos)
 
-### 1. Configurar GitHub Pages
+### 1. Configurar GitHub Pages (Opcional)
+El workflow ahora habilita GitHub Pages automáticamente, pero puedes configurarlo manualmente:
+
 1. Ve a: `https://github.com/va6046/tnovasolutions/settings/pages`
 2. **Source:** Selecciona **GitHub Actions**
 3. **Save**
+
+**Nota:** Si no lo configuras manualmente, el workflow lo hará automáticamente.
 
 ### 2. Crear Environment
 1. Ve a: `https://github.com/va6046/tnovasolutions/settings/environments`
@@ -26,6 +30,12 @@ git push origin main
 3. Tu sitio estará en: `https://va6046.github.io/tnovasolutions`
 
 ## 🔧 Si Algo Sale Mal
+
+### ❌ Error: "Get Pages site failed"
+**Solución:** 
+1. El workflow ahora habilita GitHub Pages automáticamente
+2. Si persiste, crear environment `github-pages` en Settings → Environments
+3. O configurar manualmente en Settings → Pages → Source: GitHub Actions
 
 ### ❌ Error: "Environment not found"
 **Solución:** Crear environment `github-pages` en Settings → Environments
