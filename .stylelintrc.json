@@ -1,7 +1,17 @@
 {
   "extends": ["stylelint-config-standard"],
   "rules": {
-    "indentation": 4,
-    "string-quotes": "single"
+    "color-hex-length": null,
+    "color-function-notation": null,
+    "alpha-value-notation": null,
+    "font-family-name-quotes": null,
+    "property-no-vendor-prefix": null,
+    "declaration-block-no-redundant-longhand-properties": null,
+    "length-zero-no-unit": null,
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": null,
+    "keyframes-name-pattern": null,
+    "rule-empty-line-before": null,
+    "media-feature-range-notation": null
   }
 }

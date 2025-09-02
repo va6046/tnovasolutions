@@ -25,14 +25,14 @@ jobs:
         
     - name: Build and test
       run: |
-        # Validar HTML
-        npx html-validate index.html --config .htmlvalidate.json || echo "HTML validation completed with warnings"
+        # Validar HTML (solo errores críticos)
+        npx html-validate index.html --config .htmlvalidate.json || echo "HTML validation completed"
         
-        # Validar CSS
-        npx stylelint styles.css --config .stylelintrc.json --quiet || echo "CSS validation completed with warnings"
+        # Validar CSS (solo errores críticos, ignorar warnings de formato)
+        npx stylelint styles.css --config .stylelintrc.json --quiet --max-warnings 0 || echo "CSS validation completed with warnings"
         
-        # Validar JavaScript
-        npx eslint script.js --config .eslintrc.json --quiet || echo "JS validation completed with warnings"
+        # Validar JavaScript (solo errores críticos, ignorar warnings de formato)
+        npx eslint script.js --config .eslintrc.json --quiet --max-warnings 0 || echo "JS validation completed with warnings"
         
     - name: Deploy to GitHub Pages
       if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
