@@ -32,9 +32,9 @@
   },
   "homepage": "https://tnovasolutions.com",
   "devDependencies": {
-    "html-validate": "^9.7.1",
-    "stylelint": "^16.23.1",
-    "stylelint-config-standard": "^36.0.1",
+    "html-validate": "^8.15.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
     "eslint": "^8.57.0",
     "serve": "^14.2.1"
   },
