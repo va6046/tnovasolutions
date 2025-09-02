@@ -2,46 +2,36 @@
 
 ## ⚡ Pasos Rápidos (5 minutos)
 
-### 1. Configurar GitHub Pages (Opcional)
-El workflow ahora habilita GitHub Pages automáticamente, pero puedes configurarlo manualmente:
-
+### 1. Configurar GitHub Pages
 1. Ve a: `https://github.com/va6046/tnovasolutions/settings/pages`
-2. **Source:** Selecciona **GitHub Actions**
-3. **Save**
+2. **Source:** Selecciona **Deploy from a branch**
+3. **Branch:** Selecciona **gh-pages** (se creará automáticamente)
+4. **Folder:** `/ (root)`
+5. **Save**
 
-**Nota:** Si no lo configuras manualmente, el workflow lo hará automáticamente.
-
-### 2. Crear Environment
-1. Ve a: `https://github.com/va6046/tnovasolutions/settings/environments`
-2. **New environment**
-3. **Name:** `github-pages`
-4. **Configure environment**
-
-### 3. Hacer Deploy
+### 2. Hacer Deploy
 ```bash
 git add .
 git commit -m "Deploy static site to GitHub Pages"
 git push origin main
 ```
 
-### 4. Verificar
+### 3. Verificar
 1. Ve a: `https://github.com/va6046/tnovasolutions/actions`
 2. Espera que termine el workflow
 3. Tu sitio estará en: `https://va6046.github.io/tnovasolutions`
 
 ## 🔧 Si Algo Sale Mal
 
-### ❌ Error: "Get Pages site failed"
+### ❌ Error: "Resource not accessible by integration"
 **Solución:** 
-1. El workflow ahora habilita GitHub Pages automáticamente
-2. Si persiste, crear environment `github-pages` en Settings → Environments
-3. O configurar manualmente en Settings → Pages → Source: GitHub Actions
-
-### ❌ Error: "Environment not found"
-**Solución:** Crear environment `github-pages` en Settings → Environments
+1. Configurar GitHub Pages manualmente en Settings → Pages
+2. Source: "Deploy from a branch"
+3. Branch: "gh-pages"
+4. El workflow creará la rama automáticamente
 
 ### ❌ Error: "Permission denied"
-**Solución:** Verificar que GitHub Pages esté habilitado con GitHub Actions
+**Solución:** Verificar que GitHub Pages esté configurado correctamente
 
 ### ❌ Error: "Workflow not running"
 **Solución:** 
@@ -56,8 +46,8 @@ git push origin main
 
 ## ✅ Checklist de Deploy
 
-- [ ] GitHub Pages habilitado con GitHub Actions
-- [ ] Environment `github-pages` creado
+- [ ] GitHub Pages configurado con "Deploy from a branch"
+- [ ] Rama `gh-pages` seleccionada (se crea automáticamente)
 - [ ] Archivo `CNAME` presente (si usas dominio personalizado)
 - [ ] Workflow ejecutándose en Actions
 - [ ] Sitio accesible en la URL
