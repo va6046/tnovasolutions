@@ -1,0 +1,45 @@
+{
+  "name": "tnovasolutions-website",
+  "version": "1.0.0",
+  "description": "Sitio web corporativo de TICNova Solutions",
+  "main": "index.html",
+  "scripts": {
+    "validate": "html-validate index.html && stylelint styles.css && eslint script.js",
+    "validate:html": "html-validate index.html",
+    "validate:css": "stylelint styles.css",
+    "validate:js": "eslint script.js",
+    "serve": "serve .",
+    "build": "echo 'No build step required for static site'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "website",
+    "corporate",
+    "technology",
+    "consulting",
+    "solar",
+    "iot",
+    "responsive",
+    "html5",
+    "css3",
+    "javascript"
+  ],
+  "author": "TICNova Solutions",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/va6046/tnovasolutions.git"
+  },
+  "homepage": "https://tnovasolutions.com",
+  "devDependencies": {
+    "html-validate": "^9.7.1",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard": "^36.0.1",
+    "eslint": "^8.57.0",
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

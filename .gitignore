@@ -24,11 +24,13 @@ Thumbs.db
 *.backup
 *~
 
-# Archivos de Node.js (si se agrega en el futuro)
+# Archivos de Node.js
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
+yarn.lock
 
 # Archivos de compilación
 dist/
