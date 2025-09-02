@@ -1,0 +1,60 @@
+<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradientes para el logo -->
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ff88;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Símbolo principal - Circuito integrado estilizado -->
+  <g transform="translate(5, 5)">
+    <!-- Base del chip -->
+    <rect x="0" y="0" width="30" height="30" fill="url(#primaryGradient)" rx="4"/>
+    
+    <!-- Líneas de conexión -->
+    <line x1="0" y1="7.5" x2="-3" y2="7.5" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="0" y1="15" x2="-3" y2="15" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="0" y1="22.5" x2="-3" y2="22.5" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    
+    <line x1="30" y1="7.5" x2="33" y2="7.5" stroke="#00ff88" stroke-width="1.5" opacity="0.8"/>
+    <line x1="30" y1="15" x2="33" y2="15" stroke="#00ff88" stroke-width="1.5" opacity="0.8"/>
+    <line x1="30" y1="22.5" x2="33" y2="22.5" stroke="#00ff88" stroke-width="1.5" opacity="0.8"/>
+    
+    <line x1="7.5" y1="0" x2="7.5" y2="-3" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="15" y1="0" x2="15" y2="-3" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    <line x1="22.5" y1="0" x2="22.5" y2="-3" stroke="#00d4ff" stroke-width="1.5" opacity="0.8"/>
+    
+    <line x1="7.5" y1="30" x2="7.5" y2="33" stroke="#00ff88" stroke-width="1.5" opacity="0.8"/>
+    <line x1="15" y1="30" x2="15" y2="33" stroke="#00ff88" stroke-width="1.5" opacity="0.8"/>
+    <line x1="22.5" y1="30" x2="22.5" y2="33" stroke="#00ff88" stroke-width="1.5" opacity="0.8"/>
+    
+    <!-- Puntos de conexión -->
+    <circle cx="7.5" cy="7.5" r="1" fill="#ffffff"/>
+    <circle cx="15" cy="15" r="1.5" fill="#ffffff"/>
+    <circle cx="22.5" cy="22.5" r="1" fill="#ffffff"/>
+    
+    <!-- Líneas internas del circuito -->
+    <path d="M 7.5 7.5 L 15 15 L 22.5 22.5" stroke="#ffffff" stroke-width="0.8" opacity="0.6"/>
+    <path d="M 22.5 7.5 L 15 15 L 7.5 22.5" stroke="#ffffff" stroke-width="0.8" opacity="0.6"/>
+  </g>
+  
+  <!-- Texto del logo -->
+  <g transform="translate(45, 14)">
+    <!-- TICNova -->
+    <text x="0" y="0" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="url(#textGradient)" dominant-baseline="hanging">
+      TICNova
+    </text>
+    
+    <!-- Solutions -->
+    <text x="0" y="14" font-family="Inter, sans-serif" font-size="8" font-weight="500" fill="#cbd5e1" dominant-baseline="hanging">
+      Solutions
+    </text>
+  </g>
+</svg>
