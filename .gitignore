@@ -24,14 +24,6 @@ Thumbs.db
 *.backup
 *~
 
-# Archivos de Node.js
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-package-lock.json
-yarn.lock
-
 # Archivos de compilación
 dist/
 build/
@@ -39,20 +31,9 @@ build/
 # Archivos de configuración local
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 # Archivos de cache
 .cache/
-.parcel-cache/
-
-# Archivos de testing
-coverage/
-.nyc_output/
-
-# Archivos de documentación generada
-docs/_build/
 
 # Archivos de IDE
 *.sublime-project

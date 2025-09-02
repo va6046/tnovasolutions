@@ -56,6 +56,12 @@ Sitio web profesional y moderno para TICNova Solutions, una empresa de consultor
 - **Font Awesome** - Iconografía
 - **Google Fonts** - Tipografía Inter
 
+### ✨ Sin Dependencias
+- **🚫 Sin Node.js** - Sitio web estático puro
+- **🚫 Sin Build Process** - No requiere compilación
+- **🚫 Sin Package Managers** - Solo archivos estáticos
+- **✅ Deploy Directo** - Sube y funciona
+
 ## 📁 Estructura del Proyecto
 
 ```
@@ -76,29 +82,41 @@ tnovasolutions-website/
 ## 🚀 Instalación y Uso
 
 ### Requisitos
-- Navegador web moderno
-- Servidor web (para desarrollo local)
+- **Navegador web moderno** (Chrome, Firefox, Safari, Edge)
+- **Servidor web** (solo para desarrollo local)
 
 ### Instalación Local
-1. Clona el repositorio:
+1. **Clona el repositorio:**
 ```bash
-git clone https://github.com/tu-usuario/tnovasolutions-website.git
-cd tnovasolutions-website
+git clone https://github.com/va6046/tnovasolutions.git
+cd tnovasolutions
 ```
 
-2. Abre `index.html` en tu navegador o usa un servidor local:
+2. **Abre directamente en el navegador:**
+```bash
+# Opción 1: Doble clic en index.html
+# Opción 2: Arrastra index.html al navegador
+```
+
+3. **O usa un servidor local (recomendado):**
 ```bash
 # Con Python
 python -m http.server 8000
 
-# Con Node.js
-npx serve .
-
 # Con PHP
 php -S localhost:8000
+
+# Con cualquier servidor web
+# Simplemente apunta al directorio del proyecto
 ```
 
-3. Visita `http://localhost:8000` en tu navegador
+4. **Visita `http://localhost:8000` en tu navegador**
+
+### 🎯 Deploy Directo
+- **GitHub Pages:** Push y listo
+- **Netlify:** Arrastra la carpeta
+- **Vercel:** Conecta el repositorio
+- **Cualquier hosting:** Sube los archivos
 
 ## 📱 Responsive Design
 
